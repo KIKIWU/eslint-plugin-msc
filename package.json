@@ -1,0 +1,25 @@
+{
+  "name": "eslint-plugin-msc",
+  "version": "0.0.1",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "hfe"
+  ],
+  "author": {
+    "name": "kikiwuqi",
+    "email": "wuqiweb@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter dot tests/"
+  },
+  "peerDependencies": {
+    "eslint": ">=2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5"
+  }
+}

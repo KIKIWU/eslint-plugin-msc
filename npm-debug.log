@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/wuqi06/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/Users/wuqi06/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   '0.1.0' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 verbose stack Error: Tag name must not be a valid SemVer range: 0.1.0
+5 verbose stack     at EventEmitter.publish (/Users/wuqi06/.nvm/versions/node/v6.9.1/lib/node_modules/npm/lib/publish.js:41:14)
+5 verbose stack     at Object.commandCache.(anonymous function) (/Users/wuqi06/.nvm/versions/node/v6.9.1/lib/node_modules/npm/lib/npm.js:124:13)
+5 verbose stack     at EventEmitter.<anonymous> (/Users/wuqi06/.nvm/versions/node/v6.9.1/lib/node_modules/npm/bin/npm-cli.js:73:30)
+5 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:67:7)
+5 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+6 verbose cwd /Users/wuqi06/meituan/eslint-plugin-msc
+7 error Darwin 15.5.0
+8 error argv "/Users/wuqi06/.nvm/versions/node/v6.9.1/bin/node" "/Users/wuqi06/.nvm/versions/node/v6.9.1/bin/npm" "publish" "--tag" "0.1.0"
+9 error node v6.9.1
+10 error npm  v3.10.8
+11 error Tag name must not be a valid SemVer range: 0.1.0
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
