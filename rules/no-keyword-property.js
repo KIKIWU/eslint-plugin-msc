@@ -46,7 +46,7 @@ module.exports = {
                 }
 
                 function checkExViolation(data) {
-                    if (keywords.indexOf(data) > -1) {
+                    if (keywords.indexOf(data.left.property.name) > -1) {
                         context.report({
                             node: data,
                             message: "use keyword invalid:",
@@ -57,7 +57,7 @@ module.exports = {
                     }
                 }
                 if(node.left && node.left.object && node.left.property) {
-                    checkExViolation(node.left.property.name);
+                    checkExViolation(node);
                 }
             }
         };
