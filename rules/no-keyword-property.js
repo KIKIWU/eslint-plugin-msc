@@ -39,6 +39,26 @@ module.exports = {
                 for (var i = 0; i < propertiesLength; i++) {
                     checkForViolation(node.properties[i]);
                 }
+            },
+            AssignmentExpression: function (node) {
+                if (!node.left) {
+                    return;
+                }
+
+                function checkExViolation(data) {
+                    if (keywords.indexOf(data) > -1) {
+                        context.report({
+                            node: data,
+                            message: "use keyword invalid:",
+                            data: {
+                                identifier: data
+                            }
+                        });
+                    }
+                }
+                if(node.left && node.left.object && node.left.property) {
+                    checkExViolation(node.left.property.name);
+                }
             }
         };
 

@@ -15,6 +15,10 @@
   "scripts": {
     "test": "mocha --reporter dot tests/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KIKIWU/eslint-plugin-msc.git"
+  },
   "peerDependencies": {
     "eslint": ">=2.3.0"
   },
